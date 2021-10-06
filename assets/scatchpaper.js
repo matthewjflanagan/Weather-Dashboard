@@ -1,19 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // You need to make a form with an input
 // button to submit
 var searchBtn = document.getElementById('search-button')
