@@ -13,6 +13,8 @@ Look up any city in America to view today's weather plus a 5-day forecast! Citie
 Wrote the HTML and CSS to create the elements that the data from the API information pulled would display. Made the elements that were to be used linked to Javascript with variables using JQUery. Pulled the One Call API to receive the information for the current weather and selected which information we want to be displayed on our Weather Dashboard. To get the UV index API called needed the lat and lon first then used in the second API call pull UV Index based on latitude and longitude. Then added the local storage and included the city input to be added to local storage when it was searched. Once previously searched cities were populating created the clear history function so previously searched cities will be removed once the page is refreshed. 
 
 ## Usage
+[Weather Dashboard](https://matthewjflanagan.github.io/Weather-Dashboard/)
+https://matthewjflanagan.github.io/Weather-Dashboard/
 ![First View of Page](assets/weather-dashboard-opening-page.PNG)
 ![Functionality](assets/functionalview.PNG)
 
