@@ -1,7 +1,7 @@
 # <WEATHER-DASHBOARD>
 
 ## Description
-
+Look up any city in America to view today's weather plus a 5-day forecast! Cities will be saved when they are searched and you are able to clear your history if you would like. 
 
 ## Table of Contents (Optional)
 - [Installation](#installation)
@@ -15,7 +15,7 @@
 ## Usage
 
 ## Credits
-
+TA, class hours, and tutoring were all used in completing this assignment and I needed every one of their help! 
 
 ## License
 MIT License

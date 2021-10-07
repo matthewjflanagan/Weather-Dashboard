@@ -8,7 +8,9 @@ $(document).ready(function () {
     var humidityEl = $('#humidity');
     var windEl = $('#wind-speed');
     var uvIndex = $('#UV-index');
-    var history = $('#history');
+    var historyEl = $('#history');
+    let searchHistory = JSON.parse(localStorage.getItem("search")) || [];
+    
 
     var APIKey = "f7412588db28fd477a32d11dcd322400";
     //  When the search button is clicked, look for the city name the from the user input
@@ -25,7 +27,6 @@ $(document).ready(function () {
                 displayCurrentWeather(data)
                 getUVIndex(data);
             })
-
     };
 
     function getUVIndex (data) {
@@ -79,14 +80,41 @@ $(document).ready(function () {
         var searchTerm = cityInput.value;
         getWeather(searchTerm)
         // put function for passing data from cityInput and save to local storage
+        getWeather(searchTerm);
+        searchHistory.push(searchTerm);
+        localStorage.setItem("search",JSON.stringify(searchHistory));
+        renderSearchHistory();
     })
 
+    clearHistory.addEventListener("click",function() {
+        localStorage.clear();
+    })
 
     function k2f(K) {
         return Math.floor((K - 273.15) *1.8 +32);
     }
-    // create function for passing data from cityInput and save to local storage
 
+    // create function for passing data from cityInput and save to local storage
+    function renderSearchHistory() {
+        historyEl.innerHTML = "";
+        historyEl.empty()
+        for (let i = 0; i < searchHistory.length; i++) {
+            const historyItem = document.createElement("input");
+            historyItem.setAttribute("type","text");
+            historyItem.setAttribute("readonly",true);
+            historyItem.setAttribute("class", "form-control d-block bg-white");
+            historyItem.setAttribute("value", searchHistory[i]);
+            historyItem.addEventListener("click",function() {
+                getWeather(historyItem.value);
+            })
+            historyEl.append(historyItem);
+        }
+    }
+
+    renderSearchHistory();
+    if (searchHistory.length > 0) {
+        getWeather(searchHistory[searchHistory.length - 1]);
+    }
     // var today = moment();
     // $(cityName).text(today.format("MMM Do, YYYY"));
     // console.log(today);
