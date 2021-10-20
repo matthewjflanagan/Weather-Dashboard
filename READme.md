@@ -1,16 +1,23 @@
-# <WEATHER-DASHBOARD>
+# WEATHER DASHBOARD
 
 ## Description
 Look up any city in America to view today's weather plus a 5-day forecast! Cities will be saved when they are searched and you are able to clear your history if you would like. 
 
-## Table of Contents (Optional)
+## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
 - [Credits](#credits)
 - [License](#license)
+- [Contact](#contact)
 
 ## Installation
-Wrote the HTML and CSS to create the elements that the data from the API information pulled would display. Made the elements that were to be used linked to Javascript with variables using JQUery. Pulled the One Call API to receive the information for the current weather and selected which information we want to be displayed on our Weather Dashboard. To get the UV index API called needed the lat and lon first then used in the second API call pull UV Index based on latitude and longitude. Then added the local storage and included the city input to be added to local storage when it was searched. Once previously searched cities were populating created the clear history function so previously searched cities will be removed once the page is refreshed. 
+- Wrote the HTML and CSS to create the elements that the data from the API information pulled would display
+- Made the elements that were to be used linked to Javascript with variables using JQUery
+- Pulled the One Call API to receive the information for the current weather and selected which information we want to be displayed on our Weather Dashboard
+- API called needed the lat and lon first to get the UV index 
+- Used in the second API call pull UV Index based on latitude and longitude
+- Added the local storage and included the city input to be added to local storage when it was searched
+- Once previously searched cities were populating created the clear history function so previously searched cities will be removed once the page is refreshed
 
 ## Usage
 [Weather Dashboard](https://matthewjflanagan.github.io/Weather-Dashboard/)
@@ -46,6 +53,9 @@ SOFTWARE.
 
 ## Features
 Find the current temperature, humidty, wind speed, and UV Index for any city in the world! A 5 day forecast showing temperature, wind speed, and humidity will also be displayed below the current weather. Keep a history of the cities searched and have the option to clear the history as well. 
+
+## Contact
+Email: mattflanagan40@gmail.com
 
 ## How to Contribute
 If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
