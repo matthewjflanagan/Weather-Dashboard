@@ -15,7 +15,7 @@ $(document).ready(function () {
     var APIKey = "f7412588db28fd477a32d11dcd322400";
     //  When the search button is clicked, look for the city name the from the user input
     function getWeather(cityName) {
-        var queryURL = `http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${APIKey}`;
+        var queryURL = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${APIKey}`;
         //  Execute fetch request from open weather map api
         fetch(queryURL)
             .then(function (response) {
