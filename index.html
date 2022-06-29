@@ -15,7 +15,7 @@
     </nav>
     <div class="container">
         <div class="row">
-            <div class="col-4">
+            <div>
                 <p class="search-header my-2">Search for a city</p>
                 <div class="input-group my-2">
                     <input class="form-control city-input" type="text" placeholder="Enter city name">
@@ -26,63 +26,73 @@
                 <button class="btn clear-history mb-3" type="button">Clear history</button>
                 <form id="history"></form>
             </div>
-            <div class="col-8">
-                <div class="row mr-0">
-                    <div class="col-12 border">
+            <div class="row">
+                <div class="row">
+                    <div class="border">
                         <div class="row">
-                            <div class="col-12">
-                                <span class="city-title align-middle"></span>
+                            <div class="forecast row">
+                                <span class="city-title align-middle currentWeather"></span>
                                 <img id="current-pic" src="placeholder" alt="">
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-12">
-                                <p id="temperature"></p>
+                            <div class="">
+                                <p id="temperature" class="currentWeather"></p>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-12">
-                                <p id="humidity"></p>
+                            <div class="">
+                                <p id="humidity" class="currentWeather"></p>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-12">
-                                <p id="wind-speed"></p>
+                            <div class="">
+                                <p id="wind-speed" class="currentWeather"></p>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-12">
-                                <p id="UV-index"></p>
+                            <div class="">
+                                <p id="UV-index" class="currentWeather"></p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-6">
+                    <div class="forecastHeader">
                         <h3>5-Day Forecast</h3>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="row forecast">Day 1</div>
-                        <div id="day1temp"></div>
-                        <div id="day1wind"></div>
-                        <div id="day1humidity"></div>
-                    <div class="row forecast">Day 2</div>
-                        <div id="day2temp"></div>
-                        <div id="day2wind"></div>
-                        <div id="day2humidity"></div>
-                    <div class="row forecast">Day 3</div>
-                        <div id="day3temp"></div>
-                        <div id="day3wind"></div>
-                        <div id="day3humidity"></div>
-                    <div class="row forecast"> Day 4</div>
-                        <div id="day4temp"></div>
-                        <div id="day4wind"></div>
-                        <div id="day4humidity"></div>
-                    <div class="row forecast">Day 5</div>
-                        <div id="day5temp"></div>
-                        <div id="day5wind"></div>
-                        <div id="day5humidity"></div>
+                <div class="forecastDiv">
+                    <div class="row forecastRow">
+                        <h4 class="dayHeader">Day 1</h4>
+                        <div id="day1temp" class="forecastWeather"></div>
+                        <div id="day1wind" class="forecastWeather"></div>
+                        <div id="day1humidity" class="forecastWeather"></div>
+                    </div>
+                    <div class="row forecastRow">
+                        <h4 class="dayHeader">Day 2</h4>
+                        <div id="day2temp"  class="forecastWeather"></div>
+                        <div id="day2wind"  class="forecastWeather"></div>
+                        <div id="day2humidity" class="forecastWeather"></div>
+                    </div>
+                    <div class="row forecastRow">
+                        <h4 class="dayHeader">Day 3</h4>
+                        <div id="day3temp" class="forecastWeather"></div>
+                        <div id="day3wind" class="forecastWeather"></div>
+                        <div id="day3humidity" class="forecastWeather"></div>
+                    </div>
+                    <div class="row forecastRow"> 
+                        <h4 class="dayHeader">Day 4</h4>
+                        <div id="day4temp" class="forecastWeather"></div>
+                        <div id="day4wind" class="forecastWeather"></div>
+                        <div id="day4humidity" class="forecastWeather"></div>
+                    </div>
+                    <div class="row forecastRow">
+                        <h4 class="dayHeader">Day 5</h4>
+                        <div id="day5temp" class="forecastWeather"></div>
+                        <div id="day5wind" class="forecastWeather"></div>
+                        <div id="day5humidity" class="forecastWeather"></div>
+                    </div>
                 </div>
             </div>
         </div>
