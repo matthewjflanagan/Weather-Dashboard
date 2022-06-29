@@ -47,23 +47,23 @@ $(document).ready(function () {
         })
         .then(function(data) {
             uvIndex.text("UV Index: " + data.current.uvi);
-            $('#day1temp').text("Temperature: " + data.daily[1].temp.day);
+            $('#day1temp').text("Temperature: " + k2f(data.daily[1].temp.day));
             $('#day1wind').text("Wind Speed: " + data.daily[1].wind_speed);
             $('#day1humidity').text("Humidity: " + data.daily[1].humidity);
 
-            $('#day2temp').text("Temperature: " + data.daily[2].temp.day);
+            $('#day2temp').text("Temperature: " + k2f(data.daily[2].temp.day));
             $('#day2wind').text("Wind Speed: " + data.daily[2].wind_speed);
             $('#day2humidity').text("Humidity: " + data.daily[2].humidity);
 
-            $('#day3temp').text("Temperature: " + data.daily[3].temp.day);
+            $('#day3temp').text("Temperature: " + k2f(data.daily[3].temp.day));
             $('#day3wind').text("Wind Speed: " + data.daily[3].wind_speed);
             $('#day3humidity').text("Humidity: " + data.daily[3].humidity);
 
-            $('#day4temp').text("Temperature: " + data.daily[4].temp.day);
+            $('#day4temp').text("Temperature: " + k2f(data.daily[4].temp.day));
             $('#day4wind').text("Wind Speed: " + data.daily[4].wind_speed);
             $('#day4humidity').text("Humidity: " + data.daily[4].humidity);
 
-            $('#day5temp').text("Temperature: " + data.daily[5].temp.day);
+            $('#day5temp').text("Temperature: " + k2f(data.daily[5].temp.day));
             $('#day5wind').text("Wind Speed: " + data.daily[5].wind_speed);
             $('#day5humidity').text("Humidity: " + data.daily[5].humidity);
         })

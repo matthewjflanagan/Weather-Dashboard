@@ -18,18 +18,43 @@ body {
     color: lightyellow;
 }
 
+.searchHistoryContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.searchBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.search-header {
+    font-weight: 500;
+}
+
+.historyBox {
+    display: flex;
+    flex-direction:column-reverse;
+}
+
+.d-block {
+    margin: 8px 0;
+}
+
 .btn {
     background-color: lightgray;
 }
 
-.row {
+.basicRow {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
 }
 
-.border {
+.currentWeatherBorder {
     width: 100%;
 }
 
@@ -38,7 +63,7 @@ body {
 }
 
 .currentWeather {
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .forecastHeader {
@@ -62,5 +87,5 @@ body {
 }
 
 .forecastWeather {
-    font-weight: 300;
+    font-weight: 400;
 }
